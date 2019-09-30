@@ -1,5 +1,5 @@
 .idea
-labNFS/*
-!labNFS/.gitkeep
+files/*
+!files/.gitkeep
 out
 *.iml

@@ -7,7 +7,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Servidor {
-    private static String HOME = "/home/eliabe/IFPB/P6/DE/unidade2/nfs-sockets/labNFS/";
+    private static String HOME = "/home/eliabe/IFPB/P6/DE/unidade2/nfs-sockets/files/";
 
     public static void main(String[] args) throws IOException {
         Parse parse = new Parse(HOME);
