@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class Cliente2 {
+public class Cliente {
 
     public static void main(String[] args) throws IOException {
         System.out.println("== Cliente ==");
@@ -24,11 +24,12 @@ public class Cliente2 {
         while (true) {
             Scanner teclado = new Scanner(System.in);
             // escrevendo para o servidor
+            System.out.print(" > ");
             dos.writeUTF(teclado.nextLine());
 
             // lendo o que o servidor enviou
             String mensagem = dis.readUTF();
-            System.out.println("Servidor falou: " + mensagem);
+            System.out.print(mensagem);
         }
         /*
          * Observe o while acima. Perceba que primeiro se escreve para o servidor (linha 27), depois se lê do canal de
